@@ -1,0 +1,14 @@
+<h1>Employee</h1>
+
+<form action="/employee-edit/{{user._id}}" method="post" id="form-container">
+<div>
+<label for="username">Username</label>
+<input type="text" name="username" id="username" value="{{user.username}}">
+</div>
+<div>
+<label for="role">Role</label>
+<input type="role" name="role" id="role" value="{{user.role}}">
+</div>
+    <button>Save</button>
+    <a href="/employees">Go back to all employees</a>
+</form>

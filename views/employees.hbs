@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Employees</h1>
+  <div class="column">
+    {{#each employees}}
+    <ul>
+    <li>{{this.username}}</li>
+    <a href="/employee/{{_id}}">Edit user</a>
+    <a href="/employee-delete/{{_id}}">Delete user</a>
+    </ul>
+    {{/each}}
+  </div>
+</div>
